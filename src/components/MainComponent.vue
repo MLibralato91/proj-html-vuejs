@@ -1,7 +1,38 @@
 <template>
-  <div>
-
-  </div>
+  <main>
+    <section class="shots">
+      <div class="whatWeDo">
+        whatWeDo
+      </div>
+    </section>
+   
+    <section class="even">
+      <div class="grow">
+        grow
+      </div>
+    </section>
+   
+    <section class="shots">
+      <div class="works">
+        works
+      </div>
+    </section>
+    
+    <section class="even">
+        <div class="ourPricing">
+          ourPricing
+        </div>
+    </section>
+    
+    <section class="shots">
+      <div class="latestPost">
+        latestPost
+      </div>
+      <div class="whatPeopleSay">
+        whatPeopleSay
+      </div>
+    </section>
+  </main>
 </template>
 
 <script>
@@ -11,5 +42,14 @@
 </script>
 
 <style lang="scss" scoped>
+.shots{
 
+}
+
+.even{
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(180deg, #08123d, #020332);
+  color: white;
+}
 </style>
