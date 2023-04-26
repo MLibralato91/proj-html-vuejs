@@ -155,3 +155,5 @@ const footerLinks = [
     ]
   }
 ];
+
+export {navLinks, services, works, people, footerLinks};

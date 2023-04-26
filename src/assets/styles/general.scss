@@ -9,3 +9,17 @@ $fa-font-path: './webfonts';
 body{
   font-family: 'Roboto','sans-serif';
 } 
+li{
+  list-style: none;
+}
+ul{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.myBtn{
+  padding: 5px 20px;
+  border-radius: 20px;
+}

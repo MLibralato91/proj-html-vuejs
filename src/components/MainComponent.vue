@@ -1,34 +1,35 @@
 <template>
   <main>
+
     <section class="shots">
-      <div class="whatWeDo">
+      <div class="container whatWeDo">
         whatWeDo
       </div>
     </section>
    
     <section class="even">
-      <div class="grow">
+      <div class="container grow">
         grow
       </div>
     </section>
    
     <section class="shots">
-      <div class="works">
+      <div class="container works">
         works
       </div>
     </section>
     
     <section class="even">
-        <div class="ourPricing">
+        <div class="container ourPricing">
           ourPricing
         </div>
     </section>
     
     <section class="shots">
-      <div class="latestPost">
+      <div class="container latestPost">
         latestPost
       </div>
-      <div class="whatPeopleSay">
+      <div class="container whatPeopleSay">
         whatPeopleSay
       </div>
     </section>
@@ -43,7 +44,8 @@
 
 <style lang="scss" scoped>
 .shots{
-
+  width: 100%;
+  height: 500px;
 }
 
 .even{

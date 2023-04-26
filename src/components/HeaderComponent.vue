@@ -2,27 +2,79 @@
   <header>
 
     <div class="container">
-      <div class="topHeader">
-
+      <div class="topHeader d-flex justify-content-between align-items-center">
+        <div class="logo">
+          <img src="../../public/images/white-logo-2.png" alt="">
+        </div>
+        <div class="navlinks w-50">
+          <ul class="d-flex justify-content-between align-items-center small">
+            <li v-for="link in navLink">
+             <a :href="link.url">{{link.text}}</a> 
+            </li>
+            <button class="myBtn">Sign in</button>
+          </ul>
+        </div>
       </div>
       <div class="mainHeader">
+        <div class="row">
+          <div class="left col-6 d-flex flex-column">
+            <h2 class="fw-bolder">Business Planning</h2>
+            <h3>Digital Technology</h3>
+            <h2 class="fw-bolder">Modern Solution !</h2>
+            <p>When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface .</p>
+            <div class="btnHome">
+            <button class="myBtn me-3">Try it Now</button>
+            <button class="myBtn">Explore More</button>
+              
+            </div>
+          </div>
+          <div class="right col-6">
+            <img class="img-fluid" src="../../public/images/header.png" alt="">
 
+          </div>
+        </div>
       </div>
     </div>
   </header>
 </template>
 
 <script>
+import { navLinks } from '../data/data'
 export default {
-  name: 'HeaderComponent'
+  name: 'HeaderComponent',
+  data(){
+    return{
+      navLink:navLinks
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 header {
   width: 100%;
-  height: 100vh;
+
   background-image: linear-gradient(180deg, #0c1a58, #020332);
   color: white;
 }
+
+.topHeader{
+  height: 80px;
+}
+.left{
+  padding-top: 100px;
+}
+h2,h3{
+  width: 70%;
+  font-size: 3rem;
+}
+p{
+  width: 70%;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.container{
+  padding-bottom: 100px;
+}
+
 </style>
