@@ -11,7 +11,7 @@
             <li v-for="link in navLink">
              <a :href="link.url">{{link.text}}</a> 
             </li>
-            <button class="myBtn">Sign in</button>
+            <span class="btnBlue small"><a href="#">Sign in</a></span>
           </ul>
         </div>
       </div>
@@ -23,8 +23,8 @@
             <h2 class="fw-bolder">Modern Solution !</h2>
             <p>When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface .</p>
             <div class="btnHome">
-            <button class="myBtn me-3">Try it Now</button>
-            <button class="myBtn">Explore More</button>
+            <span class="btnPink me-3 small"><a href="#">Try it Now</a></span>
+            <span class="btnBlue small"><a href="#">Explore More</a></span>
               
             </div>
           </div>
@@ -51,9 +51,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/styles/partials/variables.scss' as *;
+
 header {
   width: 100%;
-
   background-image: linear-gradient(180deg, #0c1a58, #020332);
   color: white;
 }
@@ -74,7 +75,7 @@ p{
   padding-bottom: 50px;
 }
 .container{
-  padding-bottom: 100px;
+  padding-bottom: 100px ;
 }
 
 </style>

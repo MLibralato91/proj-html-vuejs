@@ -13,6 +13,7 @@
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/styles/partials/variables.scss' as *;
 footer {
   width: 100%;
   height: 500px;

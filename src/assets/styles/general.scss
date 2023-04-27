@@ -1,3 +1,5 @@
+@use './partials/variables.scss' as *;
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 @import 'bootstrap/scss/bootstrap';
@@ -19,7 +21,19 @@ a{
   text-decoration: none;
   color: white;
 }
-.myBtn{
-  padding: 5px 20px;
+.btnBlue{
+  padding: 10px 25px;
   border-radius: 20px;
+  background: linear-gradient(90deg, $lightblue-btn, $darkblue-btn);
+  color: white;
+}
+
+.btnPink{
+  padding: 10px 25px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, $darkpink-btn, $lightpink-btn);
+  color: white;
+}
+.text-pink{
+  color: $pink-text;
 }
