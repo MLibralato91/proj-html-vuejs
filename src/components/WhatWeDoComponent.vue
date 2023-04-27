@@ -7,6 +7,7 @@
       <div class="myCardBody pt-4">
         <h5 class="fw-bolder">{{ title }}</h5>
         <p class="small pt-3">{{ paragraph }}</p>
+        <!-- <p class="small pt-3" :class="{ redTitle: red }">{{ paragraph }}</p> -->
       </div>
     </div>
   </div>
@@ -15,7 +16,7 @@
 <script>
 export default {
   name: 'WhatWeDoComponent',
-  props: ['img', 'title', 'paragraph']
+  props: ['img', 'title', 'paragraph','red']
 
 }
 </script>
@@ -32,5 +33,8 @@ img{
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+.redTitle{
+  color: red;
 }
 </style>

@@ -9,7 +9,7 @@
         <div class="navlinks w-50">
           <ul class="d-flex justify-content-between align-items-center small">
             <li v-for="link in navLink">
-             <a :href="link.url">{{link.text}}</a> 
+             <a :href="link.url" :class="{'active' : link.current }">{{link.text}}</a> 
             </li>
             <span class="btnBlue small"><a href="#">Sign in</a></span>
           </ul>
@@ -77,5 +77,7 @@ p{
 .container{
   padding-bottom: 100px ;
 }
-
+.active{
+  color: $pink-text;
+}
 </style>
