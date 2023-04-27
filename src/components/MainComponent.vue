@@ -36,8 +36,8 @@
     </section>
 
     <section class="shots">
-      <div class="container latestPost">
-        latestPost
+      <div class="container latestPost text-center">
+        <LatestPostComponent/>
       </div>
       <div class="container whatPeopleSay">
         whatPeopleSay
@@ -52,6 +52,7 @@ import StartProjComponent from './StartProjComponent.vue'
 import WorksComponent from './WorksComponent.vue';
 import PricingComponent from './PricingComponent.vue';
 import TitleSectionComponent from './TitleSectionComponent.vue';
+import LatestPostComponent from './LatestPostComponent.vue';
 import { services } from '../data/data'
 export default {
   name: 'MainComponent',
@@ -60,7 +61,8 @@ export default {
     StartProjComponent,
     WorksComponent,
     PricingComponent,
-    TitleSectionComponent
+    TitleSectionComponent,
+    LatestPostComponent
   },
   data() {
     return {
@@ -94,6 +96,6 @@ export default {
 }
 
 .latestPost {
-  text-align: center;
+
   padding-top: 400px;
 }</style>
