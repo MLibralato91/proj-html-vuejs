@@ -24,8 +24,8 @@
     </section>
 
     <section class="shots">
-      <div class="container works">
-        Works
+      <div class="works">
+        <CarouselComponent/>
       </div>
     </section>
 
@@ -63,6 +63,7 @@ import TitleSectionComponent from './TitleSectionComponent.vue';
 import LatestPostComponent from './LatestPostComponent.vue';
 import PeopleSayComponent from './PeopleSayComponent.vue';
 import SubscribeComponent from './SubscribeComponent.vue';
+import CarouselComponent from './CarouselComponent.vue';
 import { services } from '../data/data'
 export default {
   name: 'MainComponent',
@@ -74,7 +75,8 @@ export default {
     TitleSectionComponent,
     LatestPostComponent,
     PeopleSayComponent,
-    SubscribeComponent
+    SubscribeComponent,
+    CarouselComponent
   },
   data() {
     return {

@@ -57,19 +57,23 @@ const services = [
 const works = [
   {
     src: "../../public/images/8wa60okr-1-790x576.jpg",
-    title: 'Basket of Flower on table'
+    title: 'Basket of Flower on table',
+    role:'Branding Strategy'
   },
   {
     src: "../../public/images/DRY-1-790x576.jpg",
-    title: 'Purinky Products'
+    title: 'Purinky Products',
+    role:'Digital Experience'
   },
   {
     src: "../../public/images/a247b00b-3621-470f-b4b8-b3ac46f25907-1-790x576.jpg",
-    title: 'Satisfy Poster'
+    title: 'Satisfy Poster',
+    role:'Branding Strategy'
   },
   {
     src: "../../public/images/84316050-0af0-49db-a53a-241d47ddad0e-2-790x576.jpg",
-    title: 'Mock-up Template'
+    title: 'Mock-up Template',
+    role:'Branding Strategy'
   },
 ];
 
