@@ -14,7 +14,7 @@
       <li><span class="fw-bolder">Extreme </span>Typography</li>
       <li><span class="fw-bolder">Exceptional </span>Design</li>
     </ul>
-    <span class="btnPink" :class="{btnActive: btnIsActive}"><a href="#">Order Now</a></span>
+    <span class="btnPink" :class="{btnActive: btnIsActive}"><a href="#">Order Now</a><i class="fa-solid fa-arrow-right-long"></i></span>
 
   </div>
 </template>
@@ -57,11 +57,21 @@ ul {
 .active{
   background: linear-gradient(180deg, $darkpink-btn, $lightpink-btn);
   color: white;
+  
 
 }
 .btnActive{
-  background-color: white;
-  color: $pink-text;
+  background: white;
+  a{
+    color: $pink-text;
+  }
+  i{
+    color: $pink-text;
+  }
+}
+i{
+  padding-left: 50px ;
+  font-size: 0.8rem;
 }
 p {
   font-size: 0.7rem;

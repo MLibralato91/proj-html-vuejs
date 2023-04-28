@@ -23,12 +23,19 @@ ul{
 a{
   text-decoration: none;
   color: white;
+  &:hover{
+    color: white;
+  }  
 }
 .btnBlue{
   padding: 10px 25px;
   border-radius: 20px;
   background: linear-gradient(90deg, $lightblue-btn, $darkblue-btn);
   color: white;
+
+  &:hover{
+  box-shadow: 0 4px 15px 0 $lightblue-btn, 4px 6px 20px 4px $darkblue-btn;
+  }
 }
 
 .btnPink{
@@ -36,6 +43,9 @@ a{
   border-radius: 20px;
   background: linear-gradient(90deg, $darkpink-btn, $lightpink-btn);
   color: white;
+  &:hover{
+  box-shadow: 0 4px 15px 0 $lightpink-btn, 4px 6px 20px 4px $darkpink-btn;
+  }
 }
 .text-pink{
   color: $pink-text;
