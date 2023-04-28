@@ -37,12 +37,20 @@
 
     <section class="shots">
       <div class="container latestPost text-center">
-        <LatestPostComponent/>
+        <LatestPostComponent />
       </div>
-      <div class="container whatPeopleSay text-center pt-5">
-        <PeopleSayComponent/>
+      <div class="container text-center pt-5">
+        <div class="whatPeopleSay">
+          <PeopleSayComponent />
+          <div class="subscribe">
+          <SubscribeComponent />
+        </div>
+        </div>
+      
       </div>
+
     </section>
+
   </main>
 </template>
 
@@ -54,6 +62,7 @@ import PricingComponent from './PricingComponent.vue';
 import TitleSectionComponent from './TitleSectionComponent.vue';
 import LatestPostComponent from './LatestPostComponent.vue';
 import PeopleSayComponent from './PeopleSayComponent.vue';
+import SubscribeComponent from './SubscribeComponent.vue';
 import { services } from '../data/data'
 export default {
   name: 'MainComponent',
@@ -64,7 +73,8 @@ export default {
     PricingComponent,
     TitleSectionComponent,
     LatestPostComponent,
-    PeopleSayComponent
+    PeopleSayComponent,
+    SubscribeComponent
   },
   data() {
     return {
@@ -100,4 +110,16 @@ export default {
 .latestPost {
 
   padding-top: 400px;
-}</style>
+}
+
+.whatPeopleSay{
+  position: relative;
+}
+.subscribe{
+position: absolute;
+bottom: -100px;
+left: 0;
+right: 0;
+
+}
+</style>
