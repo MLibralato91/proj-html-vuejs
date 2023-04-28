@@ -3,10 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 @import 'bootstrap/scss/bootstrap';
-$fa-font-path: './webfonts';
+$fa-font-path: '../webfonts';
 
 @import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
 @import '@fortawesome/fontawesome-free/scss/solid.scss';
+@import '@fortawesome/fontawesome-free/scss/regular.scss';
+
 
 body{
   font-family: 'Roboto','sans-serif';

@@ -39,8 +39,8 @@
       <div class="container latestPost text-center">
         <LatestPostComponent/>
       </div>
-      <div class="container whatPeopleSay">
-        whatPeopleSay
+      <div class="container whatPeopleSay text-center pt-5">
+        <PeopleSayComponent/>
       </div>
     </section>
   </main>
@@ -53,6 +53,7 @@ import WorksComponent from './WorksComponent.vue';
 import PricingComponent from './PricingComponent.vue';
 import TitleSectionComponent from './TitleSectionComponent.vue';
 import LatestPostComponent from './LatestPostComponent.vue';
+import PeopleSayComponent from './PeopleSayComponent.vue';
 import { services } from '../data/data'
 export default {
   name: 'MainComponent',
@@ -62,7 +63,8 @@ export default {
     WorksComponent,
     PricingComponent,
     TitleSectionComponent,
-    LatestPostComponent
+    LatestPostComponent,
+    PeopleSayComponent
   },
   data() {
     return {
