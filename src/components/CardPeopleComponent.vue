@@ -12,7 +12,7 @@
       <p class="small">When, while lovely valley teems with vapour around meand meridian sun strikes the upper impenetrable foliage of my trees, and but a thousand.</p>
     </div>
     <div class="user">
-      <h6 class="fw-bolder">Michkel Anegl</h6>
+      <h6 class="fw-bolder">{{name}}</h6>
       <p class="small">Marketing Management</p>
     </div>
 </div>
