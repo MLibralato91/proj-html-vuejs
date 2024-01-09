@@ -33,7 +33,7 @@ const navLinks = [
 
 const services = [
   {
-    src: 'dist/images/Group-247.png',
+    src: './images/Group-247.png',
     title: "Data Analysis",
     text: 'When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper',
   },
