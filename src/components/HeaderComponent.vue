@@ -16,8 +16,8 @@
         </div>
       </div>
       <div class="mainHeader">
-        <div class="row">
-          <div class="left col-6 d-flex flex-column">
+        <div class="row d-flex flex-column-reverse">
+          <div class="left col-lg-6 col-md-12 d-flex flex-column">
             <h2 class="fw-bolder">Business Planning</h2>
             <h3>Digital Technology</h3>
             <h2 class="fw-bolder">Modern Solution !</h2>
@@ -29,7 +29,7 @@
 
             </div>
           </div>
-          <div class="right col-6">
+          <div class="right col-lg-6 col-md-12">
             <img class="img-fluid" src="../../public/images/header.png" alt="">
 
           </div>
@@ -58,39 +58,68 @@ header {
   width: 100%;
   background-image: linear-gradient(180deg, #0c1a58, #020332);
   color: white;
+
+  .container {
+    padding-bottom: 100px;
+
+    .topHeader {
+      height: 80px;
+
+      .navlinks a:hover {
+        color: $pink-text;
+      }
+    }
+
+    .mainHeader {
+      .left {
+        padding-top: 100px;
+
+        p {
+          width: 70%;
+          padding-top: 40px;
+          padding-bottom: 50px;
+        }
+
+        h2,
+        h3 {
+          width: 70%;
+          font-size: 3rem;
+        }
+      }
+    }
+
+    .active {
+      color: $pink-text;
+    }
+  }
 }
 
-.topHeader {
-  height: 80px;
+@media (max-width: 768px) {
+
+  header {
+    width: 100%;
+    background-image: linear-gradient(180deg, #0c1a58, #020332);
+    color: white;
+
+    .container {
+      .mainHeader {
+        text-align: center;
+
+        .left {
+          p {
+            width: 100%;
+          }
+
+          h2,
+          h3 {
+            width: 100%;
+            font-size: 3rem;
+          }
+        }
+      }
+
+    }
+  }
+
 }
-
-.left {
-  padding-top: 100px;
-}
-
-h2,
-h3 {
-  width: 70%;
-  font-size: 3rem;
-}
-
-p {
-  width: 70%;
-  padding-top: 40px;
-  padding-bottom: 50px;
-}
-
-.container {
-  padding-bottom: 100px;
-}
-
-.active {
-  color: $pink-text;
-}
-
-.navlinks a:hover {
-  color: $pink-text;
-}
-
-
 </style>
