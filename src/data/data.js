@@ -33,22 +33,22 @@ const navLinks = [
 
 const services = [
   {
-    src: '../../public/images/Group-247.png',
+    src: 'public/images/Group-247.png',
     title: "Data Analysis",
     text: 'When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper',
   },
   {
-    src: "../../public/images/Group-567.png",
+    src: "public/images/Group-567.png",
     title: "SEO Optimization",
     text: 'When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper',
   },
   {
-    src: "../../public/images/Group-538.png",
+    src: "public/images/Group-538.png",
     title: "Security Data",
     text: 'When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper',
   },
   {
-    src: "../../public/images/Group-566.png",
+    src: "public/images/Group-566.png",
     title: "Branding Strategy",
     text: 'When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper',
   }
@@ -56,22 +56,22 @@ const services = [
 
 const works = [
   {
-    src: "../../public/images/8wa60okr-1-790x576.jpg",
+    src: "public/images/8wa60okr-1-790x576.jpg",
     title: 'Basket of Flower on table',
     role:'Branding Strategy'
   },
   {
-    src: "../../public/images/DRY-1-790x576.jpg",
+    src: "public/images/DRY-1-790x576.jpg",
     title: 'Purinky Products',
     role:'Digital Experience'
   },
   {
-    src: "../../public/images/a247b00b-3621-470f-b4b8-b3ac46f25907-1-790x576.jpg",
+    src: "public/images/a247b00b-3621-470f-b4b8-b3ac46f25907-1-790x576.jpg",
     title: 'Satisfy Poster',
     role:'Branding Strategy'
   },
   {
-    src: "../../public/images/84316050-0af0-49db-a53a-241d47ddad0e-2-790x576.jpg",
+    src: "public/images/84316050-0af0-49db-a53a-241d47ddad0e-2-790x576.jpg",
     title: 'Mock-up Template',
     role:'Branding Strategy'
   },
@@ -79,17 +79,17 @@ const works = [
 
 const people = [
   {
-    src: "../../public/images/szabo-viktor-1266895-unsplash-1024x1024.png",
+    src: "public/images/szabo-viktor-1266895-unsplash-1024x1024.png",
     name: 'Michkel Anegl',
     role: 'Marketing Management'
   },
   {
-    src: "../../public/images/philipe-cavalcante-539505-unsplash-1024x1024.png",
+    src: "public/images/philipe-cavalcante-539505-unsplash-1024x1024.png",
     name: 'Michkel Anegl',
     role: 'Marketing Management'
   },
   {
-    src: "../../public/images/fabio-spinelli-695744-unsplash-1024x1024.png",
+    src: "public/images/fabio-spinelli-695744-unsplash-1024x1024.png",
     name: 'Michkel Anegl',
     role: 'Marketing Management'
   },
