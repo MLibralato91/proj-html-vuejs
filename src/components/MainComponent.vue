@@ -25,7 +25,7 @@
 
     <section class="shots">
       <div class="works">
-        <CarouselComponent/>
+        <CarouselComponent />
       </div>
     </section>
 
@@ -43,10 +43,10 @@
         <div class="whatPeopleSay">
           <PeopleSayComponent />
           <div class="subscribe">
-          <SubscribeComponent />
+            <SubscribeComponent />
+          </div>
         </div>
-        </div>
-      
+
       </div>
 
     </section>
@@ -114,14 +114,25 @@ export default {
   padding-top: 400px;
 }
 
-.whatPeopleSay{
+.whatPeopleSay {
   position: relative;
 }
-.subscribe{
-position: absolute;
-bottom: -100px;
-left: 0;
-right: 0;
 
+.subscribe {
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  right: 0;
+
+}
+
+@media (max-width: 768px) {
+  .ourPricing {
+    height: auto;
+  }
+
+  .latestPost {
+    padding-top: 50px;
+  }
 }
 </style>

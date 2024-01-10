@@ -1,5 +1,5 @@
 <template>
-  <div class="col-3">
+  <div class="col-lg-3 col-md-12">
     <div class="myCard p-5">
       <div class="myCardImg">
         <img :src="img" :alt="title" class="">
@@ -16,25 +16,27 @@
 <script>
 export default {
   name: 'WhatWeDoComponent',
-  props: ['img', 'title', 'paragraph','red']
+  props: ['img', 'title', 'paragraph', 'red']
 
 }
 </script>
 
 <style lang="scss" scoped>
-.myCardImg{
+.myCardImg {
   width: 120px;
   height: 120px;
   margin-left: auto;
   margin-right: auto;
-  
+
 }
-img{
+
+img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-.redTitle{
+
+.redTitle {
   color: red;
 }
 </style>

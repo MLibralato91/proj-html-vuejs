@@ -6,14 +6,14 @@
 
 
   <div class="row">
-    <div class="col-4">
+    <div class="col-lg-4 col-md-12">
       <CardPriceComponent :price="'40'" :title="'Designing'" :category="'process'" />
     </div>
-    <div class="col-4">
+    <div class="col-lg-4 col-md-12">
       <CardPriceComponent :price="'60'" :title="'Developing'" :category="'product'" :isActive="true"
         :btnIsActive="true" />
     </div>
-    <div class="col-4">
+    <div class="col-lg-4 col-md-12 ">
       <CardPriceComponent :price="'80'" :title="'Supporting'" :category="'clients'" />
     </div>
 
@@ -36,5 +36,12 @@ export default {
 <style lang="scss" scoped>
 .row {
   padding: 50px 150px;
+}
+
+@media (max-width: 768px) {
+  .row {
+    padding: 0;
+    padding-bottom: 30px;
+  }
 }
 </style>

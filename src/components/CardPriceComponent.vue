@@ -14,7 +14,8 @@
       <li><span class="fw-bolder">Extreme </span>Typography</li>
       <li><span class="fw-bolder">Exceptional </span>Design</li>
     </ul>
-    <span class="btnPink" :class="{btnActive: btnIsActive}"><a href="#">Order Now</a><i class="fa-solid fa-arrow-right-long"></i></span>
+    <span class="btnPink" :class="{ btnActive: btnIsActive }"><a href="#">Order Now</a><i
+        class="fa-solid fa-arrow-right-long"></i></span>
 
   </div>
 </template>
@@ -41,7 +42,8 @@ ul {
     margin-right: auto;
 
   }
-  li{
+
+  li {
     line-height: 2.5;
     font-size: 0.7rem;
   }
@@ -54,25 +56,31 @@ ul {
   padding: 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.active{
+
+.active {
   background: linear-gradient(180deg, $darkpink-btn, $lightpink-btn);
   color: white;
-  
+
 
 }
-.btnActive{
+
+.btnActive {
   background: white;
-  a{
+
+  a {
     color: $pink-text;
   }
-  i{
+
+  i {
     color: $pink-text;
   }
 }
-i{
-  padding-left: 50px ;
+
+i {
+  padding-left: 50px;
   font-size: 0.8rem;
 }
+
 p {
   font-size: 0.7rem;
   position: absolute;
@@ -83,4 +91,24 @@ p {
 h3 {
   line-height: 0.5;
   padding-top: 25px;
-}</style>
+}
+
+@media (max-width: 768px) {
+  .myCard {
+    margin-top: 30px;
+
+    ul {
+      li {
+        font-size: 1rem;
+      }
+    }
+
+    h3 {
+      p {
+        left: 40%;
+        top: 30px;
+      }
+    }
+  }
+}
+</style>

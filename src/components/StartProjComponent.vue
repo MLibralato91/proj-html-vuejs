@@ -1,14 +1,15 @@
 <template>
   <div class="row">
-    <div class="left col-6 text-center">
+    <div class="left col-lg-6 col-md-12 text-center">
       <img class="img-fluid" src="../../public/images/men-data.png" alt="">
     </div>
 
-    <div class="right col-6 d-flex flex-column">
+    <div class="right col-lg-6 col-md-12 d-flex flex-column">
       <span class="small pb-3">Start Your Project</span>
       <h2 class="fw-bolder">Grow Your Business</h2>
       <h3>With Our Strategy</h3>
-      <p class="small">When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface .of the
+      <p class="small">When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper
+        surface .of the
         impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary.</p>
       <div class="btnHome">
         <span class="btnPink me-3 small"><a href="#">Try it Now</a></span>
@@ -26,7 +27,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.left{
+.left {
   padding-top: 100px;
 }
 
@@ -41,8 +42,32 @@ p {
   padding-top: 40px;
   padding-bottom: 50px;
 }
-img{
+
+img {
   width: 50%;
-  
+
+}
+
+@media (max-width: 768px) {
+
+  .row {
+    .left {
+      padding-top: 0;
+    }
+
+    .right {
+      text-align: center;
+
+      P {
+        width: 100%;
+      }
+
+      h2,
+      h3 {
+        width: 100%;
+
+      }
+    }
+  }
 }
 </style>

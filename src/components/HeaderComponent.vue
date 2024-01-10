@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="mainHeader">
-        <div class="row d-flex flex-column-reverse">
+        <div class="row">
           <div class="left col-lg-6 col-md-12 d-flex flex-column">
             <h2 class="fw-bolder">Business Planning</h2>
             <h3>Digital Technology</h3>
@@ -71,6 +71,8 @@ header {
     }
 
     .mainHeader {
+
+
       .left {
         padding-top: 100px;
 
@@ -105,7 +107,22 @@ header {
       .mainHeader {
         text-align: center;
 
+        .row {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+
+        .right {
+          padding-top: 50px;
+
+          img {
+            width: 60%;
+          }
+        }
+
         .left {
+          padding-top: 50px;
+
           p {
             width: 100%;
           }
@@ -121,5 +138,4 @@ header {
     }
   }
 
-}
-</style>
+}</style>
