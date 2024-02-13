@@ -30,7 +30,13 @@
             </div>
           </div>
           <div class="right col-lg-6 col-md-12">
-            <img class="img-fluid" src="../../public/images/header.png" alt="">
+            <transition
+            appear
+            @before-enter="beforeEnter"
+            @enter="enter">
+              <img class="img-fluid" src="../../public/images/header.png" alt="">
+
+            </transition>
 
           </div>
         </div>
@@ -40,13 +46,31 @@
 </template>
 
 <script>
+import  gsap  from "gsap";
 import { navLinks } from '../data/data'
 export default {
   name: 'HeaderComponent',
   data() {
     return {
-      navLink: navLinks
+      navLink: navLinks,
     }
+  },
+  setup(){
+    const beforeEnter = (el)=>{
+      console.log('Before');
+      el.style.transform = 'translateX(800px)'
+      el.style.opacity = 0
+    }
+    const enter = (el)=>{
+      console.log('Enter');
+      gsap.to(el,{
+        duration:5,
+        x:0,
+        opacity:1
+      })
+    }
+
+    return { beforeEnter, enter}
   }
 }
 </script>
